@@ -3,7 +3,7 @@
 User friendly hyperparameter optimizer.  
 Best suited for black box models where evaluation is slow (e.g. overclocking, cooking recipe...).  
 
-Use the optimizer online [here!]()
+Use the optimizer online [here!](https://share.streamlit.io/ismail-maj/bayesian-optimization-online)
 
 or run locally with:
 
