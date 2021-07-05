@@ -99,7 +99,7 @@ if generate.button("generate") and session_state.sliders:
 if previous_config != current_config:
     show_sliders(previous_config, current_config, sliders_view, False)
 
-score = st.text_input("score", "", key=0, help="")
+score = st.text_input("score", "")
 if st.button("confirm"):
     try:
         score = int(score)
