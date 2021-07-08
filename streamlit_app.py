@@ -49,12 +49,12 @@ def show_sliders(previous_config, current_config, view, first_time):
         if first_time or previous_config[i] != current_config[i]:
             view[i][0].empty()
             slider.value = current_config[i]
-            current_config[i] = view[i][0].slider(**vars(slider), key=i)
+            current_config[i] = view[i][0].slider(**vars(slider), key="slider" + str(i))
 
         if (
             first_time
             and session_state.hidden == False
-            and view[i][1].button("delete", key=i)
+            and view[i][1].button("delete", key="button" + str(i))
         ):
             to_remove = i
 
